@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "19a1fec8-7fee-4cf4-88f3-362ad8805026",
             "zIndex": 1,
+            "id": "19a1fec8-7fee-4cf4-88f3-362ad8805026",
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -48,6 +48,44 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 170,
+              "y": 210
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "cfc54e5d-fa78-432b-ae55-39137143a91a",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": []
             }
           }
