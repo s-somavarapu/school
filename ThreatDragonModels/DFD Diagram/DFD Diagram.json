@@ -32,8 +32,8 @@
                 "text": "Trinity Wallet"
               }
             },
-            "id": "effc254e-a244-4ba8-baaa-947659832b6d",
             "zIndex": -1,
+            "id": "effc254e-a244-4ba8-baaa-947659832b6d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trinity Wallet",
@@ -63,8 +63,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "358e2060-f8d4-42a9-b384-0dd4268105e5",
             "zIndex": 0,
+            "id": "358e2060-f8d4-42a9-b384-0dd4268105e5",
             "data": {
               "type": "tm.Actor",
               "name": "User",
