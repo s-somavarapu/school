@@ -1,0 +1,1057 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Drone as First Responder",
+    "owner": "adebarro@gmu.edu",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Drone as First Responder",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.2.0",
+        "cells": [
+          {
+            "position": {
+              "x": 390.9999999999955,
+              "y": 27.000000000005144
+            },
+            "size": {
+              "width": 190,
+              "height": 450
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "C2 Station"
+              }
+            },
+            "zIndex": -1,
+            "id": "32219ae2-4f53-4aec-a9d6-31d77f57efd8",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "C2 Station",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 625,
+              "y": 350
+            },
+            "size": {
+              "width": 280,
+              "height": 170
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "C2 AI Center"
+              }
+            },
+            "zIndex": -1,
+            "id": "ad0895fa-bb98-4ef8-bc5a-b8778f176e4d",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "C2 AI Center",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 299.9999999999984,
+              "y": 2.1600499167107046e-12
+            },
+            "size": {
+              "width": 700,
+              "height": 570
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "DFR System"
+              }
+            },
+            "zIndex": -1,
+            "id": "5bf3c759-c023-45be-ac8a-b2cfc6827f5c",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "DFR System",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 140,
+              "y": 330
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Drone"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "id": "2a8b998e-f37b-4c54-ae8f-b843ef97fd15",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Drone",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "4c4918e8-fcaa-4baf-b829-fa6cde1ffb97",
+                  "title": "The enemy capture the WEP/WPA handshake",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "239b1baa-3b18-4132-bb51-ad17caa321a0",
+                  "title": "The drone does not record and save securely the commands received.",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 110,
+              "y": 130
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Police"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "id": "886d3c92-1e33-4ffb-b011-4a6eff93e532",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Police",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "3b80b560-7f7e-487d-80bc-74844e4e834e",
+                  "title": "User uses weak password, enabling an anouthorized use of the credentials",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 370.99999999999545,
+              "y": 100
+            },
+            "size": {
+              "width": 210,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Police GUI"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 3,
+            "id": "de8b596d-7faf-4c6b-b56a-7492c2b6b380",
+            "data": {
+              "type": "tm.Process",
+              "name": "Police GUI",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "0124a863-7057-41d5-8674-ed27b83b482c",
+                  "title": "A threat can spoofing the identify of the user",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "ff973f2a-3b0f-4999-948d-1a03c91fe4d0",
+                  "title": "The threat can send a malicious input",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                },
+                {
+                  "id": "b975a0c4-55a8-47d3-bfd0-3ae0cf534891",
+                  "title": "A threat can change the content of the user input",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 410,
+              "y": 300
+            },
+            "size": {
+              "width": 150,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "C2 Gateway"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 4,
+            "id": "01af8c89-999b-4346-9937-72115edeee79",
+            "data": {
+              "type": "tm.Process",
+              "name": "C2 Gateway",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "423dd0f8-edf8-4659-92b4-81aea66ba88b",
+                  "title": "A threat can spoofing the identify of the drone",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 680,
+              "y": 390
+            },
+            "size": {
+              "width": 140,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "AI Process"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 5,
+            "id": "8ee58112-f52b-417e-b764-5378553aa44a",
+            "data": {
+              "type": "tm.Process",
+              "name": "AI Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 840,
+              "y": 205
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "DFR No-SQL DB"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 6,
+            "id": "9ff5c3dd-8217-42a9-9e39-ea2a00e1392e",
+            "data": {
+              "type": "tm.Store",
+              "name": "DFR No-SQL DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "82d4d875-c13d-4277-a2e1-3c21fe9721b3",
+                  "title": "a threat can delete or change the information in the database",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "c50e5c79-0e04-4fea-92e4-a398e35df97b",
+                  "title": "The actions of the users are not logged in the database",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 640,
+              "y": 50
+            },
+            "size": {
+              "width": 220,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "generate\nreport"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 7,
+            "id": "b356b988-0833-4918-8e95-9de1233fe480",
+            "data": {
+              "type": "tm.Process",
+              "name": "generate\nreport",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 640,
+              "y": 175
+            },
+            "size": {
+              "width": 200,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Generate\nAlerts"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 8,
+            "id": "fc16f440-2f77-476f-914c-fdced927a354",
+            "data": {
+              "type": "tm.Process",
+              "name": "Generate\nAlerts",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "send-receive\nuser data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7ccf4b17-88e9-4b01-99ad-12f1f47f8171",
+                  "title": "A threat with the control of the channel, change the content of the information sent and/or received",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Impact: Tampering could compromise the drone’s functionality, alter sensor readings, or introduce malicious code.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "c23f3b4a-bf76-4374-94fc-da7a36e5dc3b",
+                  "title": "A man-in-the-middle threat disclose the channel information.",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Impact: Disclosure of mission details, surveillance data, or operational plans could compromise security.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "18232506-0278-4f43-a5a1-be0b3a9d0d41",
+            "labels": [
+              "send-receive\nuser data"
+            ],
+            "source": {
+              "cell": "886d3c92-1e33-4ffb-b011-4a6eff93e532"
+            },
+            "target": {
+              "cell": "de8b596d-7faf-4c6b-b56a-7492c2b6b380"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "telemetry data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d3a83061-bea0-4f09-8017-443503ba4a84",
+                  "title": "A threat changes the sensing data generated by the drone",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "1d1aaa6f-dcae-44ae-a51a-a4a0e75eca89",
+                  "title": "A threat (with control of the channel) discloses the channel information.",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "725657cb-0eb8-40b1-8d8f-bc30aad149ac",
+                  "title": "A threat jams the channel",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "d0354a85-09e9-4075-8d39-3fe9785bba15",
+            "labels": [
+              "telemetry data"
+            ],
+            "source": {
+              "cell": "2a8b998e-f37b-4c54-ae8f-b843ef97fd15"
+            },
+            "target": {
+              "cell": "01af8c89-999b-4346-9937-72115edeee79"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 315
+              },
+              {
+                "x": 410,
+                "y": 315
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "C2 commands",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": true,
+              "protocol": "Wi-fi",
+              "threats": [
+                {
+                  "id": "4b7d81f9-6b38-43e1-9b96-a2334b7a6ce0",
+                  "title": "A threat control the drone, through forging the input/output",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Impact: Tampering could compromise the drone’s functionality, alter sensor readings, or introduce malicious code.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "2ffd65a1-558f-4a11-b6bf-e5b327f9398a",
+                  "title": "A man-in-the-middle threat disclose the channel information.",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Impact: Disclosure of mission details, surveillance data, or operational plans could compromise security.\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "4f0837e1-3a7f-4a95-9ce8-038beb8c0ddc",
+                  "title": "A threat jams the channel",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "2f934327-c5b1-460a-92b4-a722bfcc973c",
+            "labels": [
+              "C2 commands"
+            ],
+            "source": {
+              "cell": "01af8c89-999b-4346-9937-72115edeee79"
+            },
+            "target": {
+              "cell": "2a8b998e-f37b-4c54-ae8f-b843ef97fd15"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 415
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "send data\nto process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "de559fb8-30d8-4ecf-9cc5-c385d73f121c",
+            "labels": [
+              "send data\nto process"
+            ],
+            "source": {
+              "cell": "01af8c89-999b-4346-9937-72115edeee79"
+            },
+            "target": {
+              "cell": "8ee58112-f52b-417e-b764-5378553aa44a"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "request-response\nreports",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "33e9fc39-0c49-4418-800e-584ff83852fa",
+            "labels": [
+              "request-response\nreports"
+            ],
+            "source": {
+              "cell": "de8b596d-7faf-4c6b-b56a-7492c2b6b380"
+            },
+            "target": {
+              "cell": "b356b988-0833-4918-8e95-9de1233fe480"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "generate\nalert",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "9ded9b15-dfcc-46a1-9f4d-48966cb61230",
+            "labels": [
+              "generate\nalert"
+            ],
+            "source": {
+              "cell": "8ee58112-f52b-417e-b764-5378553aa44a"
+            },
+            "target": {
+              "cell": "fc16f440-2f77-476f-914c-fdced927a354"
+            },
+            "vertices": [
+              {
+                "x": 792,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "print alerts",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "03d80ac1-de2c-4f40-8680-f159b2802b71",
+            "labels": [
+              "print alerts"
+            ],
+            "source": {
+              "cell": "fc16f440-2f77-476f-914c-fdced927a354"
+            },
+            "target": {
+              "cell": "de8b596d-7faf-4c6b-b56a-7492c2b6b380"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 254.5
+              },
+              {
+                "x": 560,
+                "y": 220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "query-result",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "b2dcd025-6da8-46eb-b969-a453375c4120",
+            "labels": [
+              "query-result"
+            ],
+            "source": {
+              "cell": "8ee58112-f52b-417e-b764-5378553aa44a"
+            },
+            "target": {
+              "cell": "9ff5c3dd-8217-42a9-9e39-ea2a00e1392e"
+            },
+            "vertices": [
+              {
+                "x": 860,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "query-response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "08e8a921-e543-41f7-b796-f33bd9aca4ac",
+            "labels": [
+              "query-response"
+            ],
+            "source": {
+              "cell": "b356b988-0833-4918-8e95-9de1233fe480"
+            },
+            "target": {
+              "cell": "9ff5c3dd-8217-42a9-9e39-ea2a00e1392e"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 130
+              },
+              {
+                "x": 880,
+                "y": 160
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 30
+  }
+}
