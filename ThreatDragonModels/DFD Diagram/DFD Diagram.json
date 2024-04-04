@@ -19,14 +19,42 @@
         "cells": [
           {
             "position": {
-              "x": 260,
-              "y": 100
+              "x": 269.9999999999999,
+              "y": 140.00000000000034
             },
             "size": {
-              "width": 60,
+              "width": 420,
+              "height": 250
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Trinity Wallet"
+              }
+            },
+            "id": "effc254e-a244-4ba8-baaa-947659832b6d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trinity Wallet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 80,
+              "y": 170
+            },
+            "size": {
+              "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "User"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -34,58 +62,17 @@
               }
             },
             "visible": true,
-            "shape": "process",
-            "zIndex": 1,
-            "id": "19a1fec8-7fee-4cf4-88f3-362ad8805026",
+            "shape": "actor",
+            "id": "358e2060-f8d4-42a9-b384-0dd4268105e5",
+            "zIndex": 0,
             "data": {
-              "type": "tm.Process",
-              "name": "Process",
+              "type": "tm.Actor",
+              "name": "User",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 170,
-              "y": 210
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 2,
-            "id": "cfc54e5d-fa78-432b-ae55-39137143a91a",
-            "data": {
-              "type": "tm.Store",
-              "name": "Store",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "providesAuthentication": false,
               "threats": []
             }
           }
